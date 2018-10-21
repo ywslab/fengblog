@@ -1,0 +1,4 @@
+<p>{{ user.username }},
+点击下列的链接来重置您的密码(60分钟内有效)
+{{ url_for('auth.reset',token=token,_external=True) }}
+注意：回复此邮件无效</p>

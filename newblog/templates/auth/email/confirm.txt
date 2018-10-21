@@ -1,0 +1,5 @@
+{{ user.username }},你好
+欢迎在我的个人网站注册
+点击下列的链接来确认您的账号(60分钟内有效)
+{{ url_for('auth.confirm',token=token,_external=True) }}
+注意：回复此邮件无效
